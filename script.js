@@ -22,7 +22,7 @@ frm.addEventListener('submit',(e) => {
 });
 
 let getWeather = async () => {
-    let response = await fetch('http://api.openweathermap.org/data/2.5/weather?q='+x+'&appid=cdb3748b80ce6230213173f0d306d0e1');
+    let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q='+x+'&appid=cdb3748b80ce6230213173f0d306d0e1');
     if (response.status === 404){
         throwError();
     }
