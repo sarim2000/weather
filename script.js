@@ -63,7 +63,7 @@ function processData(weatherData){
 
 
     
-    tempx.innerHTML =  (weatherData.main.temp - 273.15) + "°C";
+    tempx.innerHTML =  Math.round((weatherData.main.temp - 273.15)) + "°C";
     temp.appendChild(tempx);
 }
   
